@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header Elements Start from here  -->
+    <div class="container py-5 flex justify-between items-center">
+        <div class="logo w-3/12">
+            <a href="#">
+                <img src="./assets/images/logo.svg" class="w-32" alt="">
+            </a>
+        </div>
+        <div class="searchBox w-6/12 relative flex items-center">
+            <span class="absolute top-3 pl-2 text-slate-500">
+                <i class="fa fa-magnifying-glass"></i>
+            </span>
+            <input type="search" placeholder="Search Here..." class="rounded-l-lg py-2 pl-8 w-full focus:outline-none text-slate-600 text-start font-md border-primary border-2 rounded-md">
+
+            <button type="search" class="bg-primary py-2 px-5 h-11 text-white absolute rounded-sm right-0">Search</button>
+        </div>
+        <div class="w-3/12 flex space-x-4 justify-end">
+            <a href="" class="flex flex-col justify-start hover:text-primary transition-all">
+                <i class="far fa-heart text-slate-700 text-xl"></i>
+                <span class="font-poppins font-light text-sm ">WishList</span>
+            </a>
+
+            <a href="" class="flex flex-col justify-start relative hover:text-primary transition-all">
+                <i class="fas fa-bag-shopping text-slate-700 text-xl"></i>
+                <span class="h-4 w-4 rounded-full bg-primary text-white font-xs text-xs text-center ring-1 ring-white-400  shadow-md absolute -top-1 left-5">10</span>              
+                <span class="font-poppins font-light text-sm ">Cart</span>
+            </a>
+
+             <a class="flex flex-col justify-start hover:text-primary">
+                <i class="far fa-user text-slate-700 text-xl"></i>
+                <span class="font-poppins font-light text-sm ">My Account</span>
+            </a>   
+        </div>
+    </div>
+    <!--Header Elements End in here  -->
+
+    <!-- Menu Bannar Start from Here -->
+    <div class="w-full bg-slate-800 text-white">
+        <div class="container h-full flex justify-between items-center py-0 my-0">
+            <div class="categoryitems w-2/12 capitalize relative group py-3 px-5 bg-primary">
+                <a href="#" class="" >
+                    <i class="fa fa-solid fa-grip-lines pr-3"></i> All Categories
+                </a>
+                <!-- Drope Down Menu For Categories -->
+                <div class=" absolute w-full bg-white text-gray-500 divide-y-2 divide-dashed top-full left-0 shadow-sm invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-150">
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/sofa.svg" class="w-5 h-5" alt="">
+                        <span>Sofa</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/bed.svg" class="w-5 h-5" alt="">
+                        <span>Bed</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/office.svg" class="w-5 h-5" alt="">
+                        <span>Office</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/restaurant.svg" class="w-5 h-5" alt="">
+                        <span>Resturant</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/terrace.svg" class="w-5 h-5" alt="">
+                        <span>Terrace</span>
+                    </a>
+
+                   
+                </div>
+
+            </div>
+            <div class="menuitems w-7/12">
+               <ul class="flex capitalize">
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Home</a></li>
+                <li><a href="#"  class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Shop</a></li>
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">About us</a></li>
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Contact US</a></li>
+               </ul>  
+            </div>
+            <div class="signitems w-2/12">
+                <ul class="flex  space-x-2  capitalize">
+                    <li><a href="#" class="hover:text-primary">Sing up / </a></li>
+                    <li><a href="#" class="hover:text-primary">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Bannar End in  Here -->
+
+
+    <!-- Breadcrumb Start from here -->
+    <div class="container flex justify-start py-4 gap-2">
+        <a href="#" class="text-primary text-sm"><i class="fas fa-home"></i></a>
+        <a href="#" class="text-gray-400 text-sm"><i class="fa fa-angles-right"></i></a>
+        <a href="#" class="text-gray-400 text-sm">Shop</a>
+    </div>
+    <!-- Breadcrumb End In here -->
+
+
+    <!-- Main Section Area Start From Here -->
+
+    <div class="container grid grid-cols-4 gap-4 pb-16" >
+        <!-- sidebar Area Start in here -->
+        <div class="col-span-1 bg-white shadow overflow-hidden py-4 px-4 h-fit">
+            <div class="divide-y divide-dashed divide-gray-400" >
+                <!-- Category Filter Start from Here -->
+              <div class="pb-3">
+                <h3 class=" font-medium text-gray-600 uppercase py-2">Filter By Category</h3>
+                <div class="flex justify-between items-center pb-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                        <label class="pl-2 text-gray-600 text-sm">Bed</label>
+                    </div>
+                    <span class="ml-auto text-gray-400 text-xs">(1023)</span>
+                </div>
+
+
+                <div class="flex justify-between items-center pb-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                        <label class="pl-2 text-gray-600 text-sm">Sofa</label>
+                    </div>
+                    <span class="ml-auto text-gray-400 text-xs">(258)</span>
+                </div>
+
+
+
+                <div class="flex justify-between items-center pb-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                        <label class="pl-2 text-gray-600 text-sm">Kitchen</label>
+                    </div>
+                    <span class="ml-auto text-gray-400 text-xs">(520)</span>
+                </div>
+
+
+                <div class="flex justify-between items-center pb-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                        <label class="pl-2 text-gray-600 text-sm">Office</label>
+                    </div>
+                    <span class="ml-auto text-gray-400 text-xs">(759)</span>
+                </div>
+
+                
+
+                
+              </div>
+                <!-- Category Filter End In Here -->
+
+                <!-- Brand Filter Start from Here -->
+                <div>
+                    <h3 class=" font-medium text-gray-600 uppercase py-2">Filter By Brands</h3>
+                    <div class="flex justify-between items-center pb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                            <label class="pl-2 text-gray-600 text-sm">Bed</label>
+                        </div>
+                        <span class="ml-auto text-gray-400 text-xs">(1023)</span>
+                    </div>
+    
+    
+                    <div class="flex justify-between items-center pb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                            <label class="pl-2 text-gray-600 text-sm">Sofa</label>
+                        </div>
+                        <span class="ml-auto text-gray-400 text-xs">(258)</span>
+                    </div>
+    
+    
+    
+                    <div class="flex justify-between items-center pb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                            <label class="pl-2 text-gray-600 text-sm">Kitchen</label>
+                        </div>
+                        <span class="ml-auto text-gray-400 text-xs">(520)</span>
+                    </div>
+    
+    
+                    <div class="flex justify-between items-center pb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class=" focus:outline-none border border-primary text-primary form-checkbox focus:ring-0">
+                            <label class="pl-2 text-gray-600 text-sm">Office</label>
+                        </div>
+                        <span class="ml-auto text-gray-400 text-xs">(759)</span>
+                    </div>
+    
+                </div>
+                
+                <!-- Brand Filter End In Here -->
+
+
+                <!-- Price Filter Start from Here -->
+                <div class="pb-3">
+                    <h3 class=" font-medium text-gray-600 uppercase py-2">Filter By Price</h3>
+                        <input type="text" placeholder="min" class="focus:ring-0 focus:border-primary mb-2 w-full border-gray-400 rounded-sm ">
+                        <input type="text" placeholder="max" class="focus:ring-0 focus:border-primary  w-full border-gray-400 rounded-sm">
+                </div>
+
+                <!-- Price Filter End In Here -->
+
+
+                <!-- Color Filter Start from Here -->
+                <div class="pb-3">
+                    <h3 class=" font-medium text-gray-600 uppercase py-2">Filter By Colors</h3>
+                    <div class="flex gap-2 justify-start size">
+                        <input type="radio" name="" id="green" class="hidden"><label for="green" class="w-5 h-5" style="background-color:green;"></label>
+                        <input type="radio" name="" id="blue" class="hidden"><label for="blue" class="w-5 h-5" style="background-color:blue;"></label>
+                        <input type="radio" name="" id="black" class="hidden"><label for="black" class="w-5 h-5" style="background-color:black;"></label>
+                    </div>
+                </div>
+                <!-- Color Filter End In Here -->
+
+                <!-- Size Filter Start from Here -->
+                <div>
+                    <h3 class=" font-medium text-gray-600 uppercase py-2">Filter By Size</h3>
+                    <div class="flex gap-2 justify-start">
+                        <div class="size">
+                            <input type="radio" name="" id="xs" class="hidden"><label for="xs" class=" cursor-pointer flex items-center justify-center w-5 h-5 border border-gray-400 text-xs text-gray-500">XS</label>
+
+                        </div>
+
+                        <div class="size">
+                            <input type="radio" name="" id="sm" class="hidden"><label for="sm" class="cursor-pointer flex items-center justify-center w-5 h-5 border border-gray-400 text-xs text-gray-500">SM</label>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Size Filter End In Here -->
+            </div>
+        </div>
+        <!-- sidebar Area End in here -->
+
+        <!-- Product Section -->
+           <!-- Product Area Start From Here -->
+    <div class="col-span-3">
+        <div class="container">
+            <select name="" class="border border-gray-400 focus:ring-0 focus:border-primary mb-4 text-sm" id="">
+                <option value="">Sort By Value</option>
+                <option value="">Sort By Value</option>
+                <option value="">Sort By Value</option>
+                <option value="">Sort By Value</option>
+                <option value="">Sort By Value</option>
+            </select>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-3  gap-6">
+                <!-- Single Product Card Start -->
+                <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product9.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center quickviewbtn"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product1.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product2.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product3.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product5.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product6.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product7.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product8.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+            </div>
+
+        </div>
+    </div>
+    <!-- Product Area End In Here -->
+    </div>
+
+    <!-- Main Section Area End In Here -->
+    
+    <!-- Footer Area Start From Here -->
+    <div class="w-full pb-16 bg-slate-300 py-16">
+        <div class="container grid grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <img src="./assets/images/logo.svg" class="w-32 pb-5" alt="">
+                <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta fugiat tempora aliquid officiis blanditiis, voluptas delectus nulla nihil non!</p>
+                <div class="flex space-x-2 text-slate-500 py-3 cursor-pointer">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+            <div class="col-span-2 grid grid-cols-4 gap-3">
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Solutions</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Merketing</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Analystics</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Commerce</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Insights</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Supports</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Pricing</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Documentatio</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Guids</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Support</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Comapny</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">About</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Blogs</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Jobs</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Merketing</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Legals</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Clams</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Policy</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Priavcy</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End In Here -->
+
+    <!-- Copyrights Area Start In Here -->
+    <div class="w-full py-3 bg-black text-white">
+        <div class="container  flex justify-between">
+            <div class="text">
+                <p>All rights reserve to <span class="font-bold text-primary">&copy; REFSHOP</span></p>
+            </div>
+            <img src="./assets/images/methods.png" class="w-64" alt="">
+        </div>
+    </div>
+    <!-- Copyrights Area End In Here -->
+
+    <!-- Modal Product Quick View -->
+    <div class="relative z-10 opacity-0 invisible transition-all duration-500" id="quickviewmodal" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 hidden bg-gray-500 bg-opacity-75 transition-opacity md:block"></div>
+      
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+          <div class="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4">
+            <div class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
+              <div class="relative flex w-full items-center overflow-hidden bg-white px-4 pt-14 pb-8 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+                <button type="button" id="close" class="absolute top-4 right-4 text-gray-400 hover:text-gray-500 sm:top-8 sm:right-6 md:top-6 md:right-6 lg:top-8 lg:right-8">
+                  <span class="sr-only">Close</span>
+                  <!-- Heroicon name: outline/x-mark -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+      
+                <div class="grid w-full grid-cols-1 items-start gap-y-8 gap-x-6 sm:grid-cols-12 lg:gap-x-8">
+                  <div class="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-quick-preview-02-detail.jpg" alt="Two each of gray, white, and black shirts arranged on table." class="object-cover object-center">
+                  </div>
+                  <div class="sm:col-span-8 lg:col-span-7">
+                    <h2 class="text-2xl font-bold text-gray-900 sm:pr-12">Basic Tee 6-Pack</h2>
+      
+                    <section aria-labelledby="information-heading" class="mt-2">
+                      <h3 id="information-heading" class="sr-only">Product information</h3>
+      
+                      <p class="text-2xl text-gray-900">$192</p>
+      
+                      <!-- Reviews -->
+                      <div class="mt-6">
+                        <h4 class="sr-only">Reviews</h4>
+                        <div class="flex items-center">
+                          <div class="flex items-center">
+                            <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+      
+                            <!-- Heroicon name: mini/star -->
+                            <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+      
+                            <!-- Heroicon name: mini/star -->
+                            <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+      
+                            <!-- Heroicon name: mini/star -->
+                            <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+      
+                            <!-- Heroicon name: mini/star -->
+                            <svg class="text-gray-200 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                          </div>
+                          <p class="sr-only">3.9 out of 5 stars</p>
+                          <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">117 reviews</a>
+                        </div>
+                      </div>
+                    </section>
+      
+                    <section aria-labelledby="options-heading" class="mt-10">
+                      <h3 id="options-heading" class="sr-only">Product options</h3>
+      
+                      <form>
+                        <!-- Colors -->
+                        <div>
+                          <h4 class="text-sm font-medium text-gray-900">Color</h4>
+      
+                          <fieldset class="mt-4">
+                            <legend class="sr-only">Choose a color</legend>
+                            <span class="flex items-center space-x-3">
+                            
+                              <label class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                                <input type="radio" name="color-choice" value="White" class="sr-only" aria-labelledby="color-choice-0-label">
+                                <span id="color-choice-0-label" class="sr-only"> White </span>
+                                <span aria-hidden="true" class="h-8 w-8 bg-white border border-black border-opacity-10 rounded-full"></span>
+                              </label>
+      
+                            
+                           
+                              <label class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                                <input type="radio" name="color-choice" value="Gray" class="sr-only" aria-labelledby="color-choice-1-label">
+                                <span id="color-choice-1-label" class="sr-only"> Gray </span>
+                                <span aria-hidden="true" class="h-8 w-8 bg-gray-200 border border-black border-opacity-10 rounded-full"></span>
+                              </label>
+      
+                           
+                              <label class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-900">
+                                <input type="radio" name="color-choice" value="Black" class="sr-only" aria-labelledby="color-choice-2-label">
+                                <span id="color-choice-2-label" class="sr-only"> Black </span>
+                                <span aria-hidden="true" class="h-8 w-8 bg-gray-900 border border-black border-opacity-10 rounded-full"></span>
+                              </label>
+                            </span>
+                          </fieldset>
+                        </div>
+      
+                        <!-- Sizes -->
+                        <div class="mt-10">
+                          <div class="flex items-center justify-between">
+                            <h4 class="text-sm font-medium text-gray-900">Size</h4>
+                            <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Size guide</a>
+                          </div>
+      
+                          <fieldset class="mt-4">
+                            <legend class="sr-only">Choose a size</legend>
+                            <div class="grid grid-cols-4 gap-4">
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="XXS" class="sr-only" aria-labelledby="size-choice-0-label">
+                                <span id="size-choice-0-label">XXS</span>
+      
+                               
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="XS" class="sr-only" aria-labelledby="size-choice-1-label">
+                                <span id="size-choice-1-label">XS</span>
+      
+                             
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="S" class="sr-only" aria-labelledby="size-choice-2-label">
+                                <span id="size-choice-2-label">S</span>
+      
+                               
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="M" class="sr-only" aria-labelledby="size-choice-3-label">
+                                <span id="size-choice-3-label">M</span>
+      
+                               
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="L" class="sr-only" aria-labelledby="size-choice-4-label">
+                                <span id="size-choice-4-label">L</span>
+      
+                              
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="XL" class="sr-only" aria-labelledby="size-choice-5-label">
+                                <span id="size-choice-5-label">XL</span>
+      
+                              
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-white shadow-sm text-gray-900 cursor-pointer">
+                                <input type="radio" name="size-choice" value="XXL" class="sr-only" aria-labelledby="size-choice-6-label">
+                                <span id="size-choice-6-label">XXL</span>
+      
+                               
+                                <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                              </label>
+      
+                              <!-- Active: "ring-2 ring-indigo-500" -->
+                              <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 bg-gray-50 text-gray-200 cursor-not-allowed">
+                                <input type="radio" name="size-choice" value="XXXL" disabled class="sr-only" aria-labelledby="size-choice-7-label">
+                                <span id="size-choice-7-label">XXXL</span>
+      
+                                <span aria-hidden="true" class="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200">
+                                  <svg class="absolute inset-0 h-full w-full stroke-2 text-gray-200" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="currentColor">
+                                    <line x1="0" y1="100" x2="100" y2="0" vector-effect="non-scaling-stroke" />
+                                  </svg>
+                                </span>
+                              </label>
+                            </div>
+                          </fieldset>
+                        </div>
+      
+                        <button type="submit" class="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Add to bag</button>
+                      </form>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Modal Product Quick View End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

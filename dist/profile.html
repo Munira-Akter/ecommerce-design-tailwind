@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header Elements Start from here  -->
+    <div class="container py-5 flex justify-between items-center">
+        <div class="logo w-3/12">
+            <a href="#">
+                <img src="./assets/images/logo.svg" class="w-32" alt="">
+            </a>
+        </div>
+        <div class="searchBox w-6/12 relative flex items-center">
+            <span class="absolute top-3 pl-2 text-slate-500">
+                <i class="fa fa-magnifying-glass"></i>
+            </span>
+            <input type="search" placeholder="Search Here..." class="rounded-l-lg py-2 pl-8 w-full focus:outline-none text-slate-600 text-start font-md border-primary border-2 rounded-md">
+
+            <button type="search" class="bg-primary py-2 px-5 h-11 text-white absolute rounded-sm right-0">Search</button>
+        </div>
+        <div class="w-3/12 flex space-x-4 justify-end">
+            <a href="" class="flex flex-col justify-start hover:text-primary transition-all">
+                <i class="far fa-heart text-slate-700 text-xl"></i>
+                <span class="font-poppins font-light text-sm ">WishList</span>
+            </a>
+
+            <a href="" class="flex flex-col justify-start relative hover:text-primary transition-all">
+                <i class="fas fa-bag-shopping text-slate-700 text-xl"></i>
+                <span class="h-4 w-4 rounded-full bg-primary text-white font-xs text-xs text-center ring-1 ring-white-400  shadow-md absolute -top-1 left-5">10</span>              
+                <span class="font-poppins font-light text-sm ">Cart</span>
+            </a>
+
+             <a class="flex flex-col justify-start hover:text-primary">
+                <i class="far fa-user text-slate-700 text-xl"></i>
+                <span class="font-poppins font-light text-sm ">My Account</span>
+            </a>   
+        </div>
+    </div>
+    <!--Header Elements End in here  -->
+
+    <!-- Menu Bannar Start from Here -->
+    <div class="w-full bg-slate-800 text-white">
+        <div class="container h-full flex justify-between items-center py-0 my-0">
+            <div class="categoryitems w-2/12 capitalize relative group py-3 px-5 bg-primary">
+                <a href="#" class="" >
+                    <i class="fa fa-solid fa-grip-lines pr-3"></i> All Categories
+                </a>
+                <!-- Drope Down Menu For Categories -->
+                <div class=" absolute w-full bg-white text-gray-500 divide-y-2 divide-dashed top-full left-0 shadow-sm invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-150">
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/sofa.svg" class="w-5 h-5" alt="">
+                        <span>Sofa</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/bed.svg" class="w-5 h-5" alt="">
+                        <span>Bed</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/office.svg" class="w-5 h-5" alt="">
+                        <span>Office</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/restaurant.svg" class="w-5 h-5" alt="">
+                        <span>Resturant</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/terrace.svg" class="w-5 h-5" alt="">
+                        <span>Terrace</span>
+                    </a>
+
+                   
+                </div>
+
+            </div>
+            <div class="menuitems w-7/12">
+               <ul class="flex capitalize">
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Home</a></li>
+                <li><a href="#"  class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Shop</a></li>
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">About us</a></li>
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Contact US</a></li>
+               </ul>  
+            </div>
+            <div class="signitems w-2/12">
+                <ul class="flex  space-x-2  capitalize">
+                    <li><a href="#" class="hover:text-primary">Sing up / </a></li>
+                    <li><a href="#" class="hover:text-primary">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Bannar End in  Here -->
+
+
+    <!-- Breadcrumb Start from here -->
+    <div class="container flex justify-start py-4 gap-2">
+        <a href="#" class="text-primary text-sm"><i class="fas fa-home"></i></a>
+        <a href="#" class="text-gray-400 text-sm"><i class="fa fa-angles-right"></i></a>
+        <a href="#" class="text-gray-400 text-sm">My Account</a>
+    </div>
+    <!-- Breadcrumb End In here -->
+
+
+    <!-- Main Section Area Start From Here -->
+
+    <div class="container grid grid-cols-12 gap-4 pb-16" >
+       <!-- Sidebar -->
+       <div class="col-span-3">
+        <!-- Profile Avavtar -->
+        <div class="bg-white shadow py-4 px-6 text-gray-700 flex justify-start items-center">
+            <img src="./assets/images/avatar.png" class="w-16 h-16 rounded-full ring-2 ring-offset-white ring-offset-2 ring-red-200 shadow object-cover" alt="">
+            <div class="text-left ml-3">
+                <h4 class="font-medium">Hello,</h4>
+                <p class="text-bold text-gray-800">Munira Akter</p>
+            </div>
+        </div>
+        <!-- Profile Avavtar End -->
+
+        <!-- Profile Links -->
+        <div class="bg-white shadow py-4 px-6 mt-3 divide-y-2  divide-gray-200 divide-solid space-y-4">
+            <!-- Profile Link -->
+            <div class="space-y-2">
+                <a href="#" class="font-semibold text-primary text-sm block"><i class="fas fa-address-card"></i> &nbsp; Manage Account</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">Profile Information</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">Manage Address</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">Change Password</a>
+            </div>
+            <!-- Profile Link End -->
+
+            <!-- Order Hstory -->
+            <div class="space-y-2 pt-3">
+                <a href="#" class="font-semibold text-primary text-sm block"><i class="fab fa-first-order"></i> &nbsp; Order History</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">My Order</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">My Returns</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">My Cancellations</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">My Reviews</a>
+            </div>
+            <!-- Order Hstory End -->
+
+             <!-- Payment Method -->
+             <div class="space-y-2 pt-3">
+                <a href="#" class="font-semibold text-primary text-sm block"><i class="fa fa-cash-register"></i> &nbsp; Payment Methods</a>
+
+                <a href="#" class="text-sm text-gray-600 block pl-6 hover:text-primary transition-all">My Voucher</a>
+
+            </div>
+            <!-- Payment Method End -->
+
+            <!-- WhisList -->
+              <div class="space-y-2 pt-3">
+                <a href="#" class="font-semibold text-primary text-sm block"><i class="fas fa-heart"></i> &nbsp; My WishLists</a>
+
+            </div>
+            <!-- WhisList End -->
+
+              <!-- Logout -->
+              <div class="space-y-2 pt-3">
+                <a href="#" class="font-semibold text-primary text-sm block"><i class="fa fa-arrow-right-from-bracket"></i> &nbsp; Logout</a>
+
+            </div>
+            <!-- Logout End -->
+
+
+        </div>
+        <!-- Profile Links End -->
+       </div>
+       <!-- Sidebar End -->
+
+       <!-- Main Section  -->
+       <div class="col-span-9">
+            <div class="bg-white px-3 py-10 shadow h-fit w-full grid grid-cols-6 mb-3 divide-x-2" >
+                <div class="col-span-2">
+                    <h2 class="text-sm font-semibold">Personal Profile</h2>
+                </div>
+                <div class="col-span-4 pl-10 ">
+                    <form class="space-y-4">
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">Email Address</label>
+                            <input type="email" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your email address">
+                        </div>
+            
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">UserName</label>
+                            <input type="text" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your username">
+                        </div>
+
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block pb-4">Profile Picture</label>
+                            <input type="file" name="" id="" class="fileInput">
+                            <img src="./assets/images/avatar.png" class="w-20 h-20 rounded-full object-cover my-3 previewImg" alt="">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="bg-white px-3 py-10 shadow h-fit w-full grid grid-cols-6 mb-3 divide-x-2" >
+                <div class="col-span-2">
+                    <h2 class="text-sm font-semibold">Shipping Address</h2>
+                </div>
+                <div class="col-span-4 pl-10 ">
+                    <form class="space-y-4">
+
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">Address Line One</label>
+                            <input type="email" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your email address">
+                        </div>
+
+
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">Address Line Two</label>
+                            <input type="email" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your email address">
+                        </div>
+            
+                       <div class="grid grid-cols-2 gap-6">
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">Postal Code</label>
+                            <input type="text" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your username">
+                        </div>
+
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">District</label>
+                            <input type="text" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your username">
+                        </div>
+
+                       </div>
+
+                       <div class="grid grid-cols-2 gap-6">
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">City</label>
+                            <input type="text" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your username">
+                        </div>
+
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">Country</label>
+                            <input type="text" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your username">
+                        </div>
+
+                       </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="bg-white px-3 py-10 shadow h-fit w-full grid grid-cols-6 mb-3 divide-x-2" >
+                <div class="col-span-2">
+                    <h2 class="text-sm font-semibold">Personal Profile</h2>
+                </div>
+                <div class="col-span-4 pl-10 ">
+                    <form class="space-y-4">
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">Email Address</label>
+                            <input type="email" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your email address">
+                        </div>
+            
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block">UserName</label>
+                            <input type="text" name="" id="" class="h-8 border w-full focus:ring-0 focus:border-primary text-gray-400  block border-gray-400 placeholder:text-gray-400 placeholder:text-sm placeholder:font-light" placeholder="Enter your username">
+                        </div>
+
+                        <div class="form-group w-full">
+                            <label class="text-gray-600 text-sm block pb-4">Profile Picture</label>
+                            <input type="file" name="" id="" class="fileInput">
+                            <img src="./assets/images/avatar.png" class="w-20 h-20 rounded-full object-cover my-3 previewImg" alt="">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+       </div>
+       <!-- Main Section End -->
+    </div>
+
+    <!-- Main Section Area End In Here -->
+    
+    <!-- Footer Area Start From Here -->
+    <div class="w-full pb-16 bg-slate-300 py-16">
+        <div class="container grid grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <img src="./assets/images/logo.svg" class="w-32 pb-5" alt="">
+                <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta fugiat tempora aliquid officiis blanditiis, voluptas delectus nulla nihil non!</p>
+                <div class="flex space-x-2 text-slate-500 py-3 cursor-pointer">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+            <div class="col-span-2 grid grid-cols-4 gap-3">
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Solutions</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Merketing</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Analystics</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Commerce</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Insights</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Supports</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Pricing</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Documentatio</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Guids</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Support</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Comapny</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">About</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Blogs</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Jobs</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Merketing</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Legals</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Clams</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Policy</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Priavcy</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End In Here -->
+
+    <!-- Copyrights Area Start In Here -->
+    <div class="w-full py-3 bg-black text-white">
+        <div class="container  flex justify-between">
+            <div class="text">
+                <p>All rights reserve to <span class="font-bold text-primary">&copy; REFSHOP</span></p>
+            </div>
+            <img src="./assets/images/methods.png" class="w-64" alt="">
+        </div>
+    </div>
+    <!-- Copyrights Area End In Here -->
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <!--Header Elements Start from here  -->
+    <div class="container py-5 flex justify-between items-center">
+        <div class="logo w-3/12 sm:w-4/12">
+            <a href="#">
+                <img src="./assets/images/logo.svg" class="w-32" alt="">
+            </a>
+        </div>
+        <div class="searchBox w-6/12 relative flex items-center sm:invisible sm:hidden">
+            <span class="absolute top-3 pl-2 text-slate-500">
+                <i class="fa fa-magnifying-glass"></i>
+            </span>
+            <input type="search" placeholder="Search Here..." class="rounded-l-lg py-2 pl-8 w-full focus:outline-none text-slate-600 text-start font-md border-primary border-2 rounded-md">
+
+            <button type="search" class="bg-primary py-2 px-5 h-11 text-white absolute rounded-sm right-0">Search</button>
+        </div>
+        <div class="w-3/12 sm:w-6/12 flex space-x-4 justify-end">
+            <a href="" class="flex flex-col justify-start hover:text-primary transition-all">
+                <i class="far fa-heart text-slate-700 text-xl"></i>
+                <span class="font-poppins font-light text-sm ">WishList</span>
+            </a>
+
+            <a href="" class="flex flex-col justify-start relative hover:text-primary transition-all">
+                <i class="fas fa-bag-shopping text-slate-700 text-xl"></i>
+                <span class="h-4 w-4 rounded-full bg-primary text-white font-xs text-xs text-center ring-1 ring-white-400  shadow-md absolute -top-1 left-5">10</span>              
+                <span class="font-poppins font-light text-sm ">Cart</span>
+            </a>
+
+             <a class="flex flex-col justify-start hover:text-primary">
+                <i class="far fa-user text-slate-700 text-xl"></i>
+                <span class="font-poppins font-light text-sm ">My Account</span>
+            </a>   
+        </div>
+        <div class="lg:hidden w-2/12 text-right text-primary text-md">
+            <i class="fas fa-bars fa-2xl"></i>
+        </div>
+
+       
+
+    </div>
+    <!--Header Elements End in here  -->
+
+    <!-- Menu Bannar Start from Here -->
+    <div class="w-full bg-slate-800 text-white md:hidden sm:hidden">
+        <div class="container h-full flex justify-between items-center py-0 my-0">
+            <div class="categoryitems w-2/12 capitalize relative group py-3 px-5 bg-primary">
+                <a href="#" class="" >
+                    <i class="fa fa-solid fa-grip-lines pr-3"></i> All Categories
+                </a>
+                <!-- Drope Down Menu For Categories -->
+                <div class=" absolute w-full bg-white text-gray-500 divide-y-2 divide-dashed top-full left-0 shadow-sm invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-150">
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/sofa.svg" class="w-5 h-5" alt="">
+                        <span>Sofa</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/bed.svg" class="w-5 h-5" alt="">
+                        <span>Bed</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/office.svg" class="w-5 h-5" alt="">
+                        <span>Office</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/restaurant.svg" class="w-5 h-5" alt="">
+                        <span>Resturant</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-2 py-4 space-x-2 text-sm hover:bg-gray-200 transition-all duration-75 hover:text-primary">
+                        <img src="./assets/images/icons/terrace.svg" class="w-5 h-5" alt="">
+                        <span>Terrace</span>
+                    </a>
+
+                   
+                </div>
+
+            </div>
+            <div class="menuitems w-7/12">
+               <ul class="flex capitalize">
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Home</a></li>
+                <li><a href="#"  class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Shop</a></li>
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">About us</a></li>
+                <li><a href="#" class="hover:bg-slate-600  focus:bg-primary-600 hover:translate-x-2 transition-all ease-in-out delay-75 duration-300 py-3 px-5">Contact US</a></li>
+               </ul>  
+            </div>
+            <div class="signitems w-2/12">
+                <ul class="flex  space-x-2  capitalize">
+                    <li><a href="#" class="hover:text-primary">Sing up / </a></li>
+                    <li><a href="#" class="hover:text-primary">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Bannar End in  Here -->
+
+    <!-- Bannar Section Start from Here -->
+    <div class="w-full bg-cover  bg-center py-36" style="background-image: url('./assets/images//banner-bg.jpg');">
+        <div class="container">
+            <h1 class="text-5xl text-gray-700 font-medium capitalize font-poppins ">Best Collection For <br> Home Accessories</h1>
+
+            <p class="py-5 text-sm leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit.A sapiente rem iste voluptate <br> enim minus nobis tenetur suscipit asperiores ea!  Perferen</p>
+
+            <button class="py-2 px-12 bg-primary border border-primary rounded-sm text-white shadow-md">Shop Now</button>
+        </div>
+    </div>
+    <!-- Bannar Section End in Here -->
+
+
+    <!-- Feature Area Start from Here -->
+    <div class="w-full py-16">
+        <div class="w-8/12 mx-auto grid lg:grid-cols-3 sm:grid-cols-1  gap-6 justify-center">
+            <div class="feature-item flex justify-center items-center border border-primary py-5">
+                <img src="./assets/images/icons/delivery-van.svg" alt="">
+                <div class="flex flex-col pl-5">
+                    <h3 class="text-lg font-medium">Free Shipping</h3>
+                    <p class=" text-gray-500 text-sm">Over $200 Purchase</p>
+                </div>
+            </div>
+
+            <div class="feature-item flex justify-center items-center border border-primary py-5">
+                <img src="./assets/images/icons/money-back.svg" alt="">
+                <div class="flex flex-col pl-5">
+                    <h3 class="text-lg font-medium">Money Return</h3>
+                    <p class=" text-gray-500 text-sm">30 days Money Back</p>
+                </div>
+            </div>
+
+            <div class="feature-item flex justify-center items-center border border-primary py-5">
+                <img src="./assets/images/icons/service-hours.svg" alt="">
+                <div class="flex flex-col pl-5">
+                    <h3 class="text-lg font-medium">24/7 Support</h3>
+                    <p class=" text-gray-500 text-sm">24/7 Live Dedicate Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Area End in Hrere -->
+
+    <!-- Category Area Start From Here -->
+    <div class="w-full pb-16">
+        <div class="container">
+            <h2 class="text-gray-800 uppercase font-bold text-2xl pb-5">Shop by category</h2>
+            <div class="grid grid-cols-3 gap-3 justify-center">
+                <div class="relative hover:scale-95 transition-all duration-500">
+                    <img src="./assets/images/category/category-1.jpg"  class="" alt="">
+                    <a href="" class=" absolute bg-black bg-opacity-40 inset-0 text-white text-center flex items-center justify-center font-medium text-md"> SOFA</a>
+                </div>
+
+                <div class="relative hover:scale-95 transition-all duration-500">
+                    <img src="./assets/images/category/category-2.jpg"  class="" alt="">
+                    <a href="" class=" absolute bg-black bg-opacity-40 inset-0 text-white text-center flex items-center justify-center font-medium text-md"> BED</a>
+                </div>
+
+
+                <div class="relative hover:scale-95 transition-all duration-500">
+                    <img src="./assets/images/category/category-3.jpg"  class="" alt="">
+                    <a href="" class=" absolute bg-black bg-opacity-40 inset-0 text-white text-center flex items-center justify-center font-medium text-md"> OFFICE</a>
+                </div>
+
+                <div class="relative hover:scale-95 transition-all duration-500">
+                    <img src="./assets/images/category/category-4.jpg"  class="" alt="">
+                    <a href="" class=" absolute bg-black bg-opacity-40 inset-0 text-white text-center flex items-center justify-center font-medium text-md"> SOFA</a>
+                </div>
+
+                <div class="relative hover:scale-95 transition-all duration-500">
+                    <img src="./assets/images/category/category-5.jpg"  class="" alt="">
+                    <a href="" class=" absolute bg-black bg-opacity-40 inset-0 text-white text-center flex items-center justify-center font-medium text-md"> LiVING ROOM</a>
+                </div>
+
+                <div class="relative hover:scale-95 transition-all duration-500">
+                    <img src="./assets/images/category/category-6.jpg"  class="" alt="">
+                    <a href="" class=" absolute bg-black bg-opacity-40 inset-0 text-white text-center flex items-center justify-center font-medium text-md"> DINING AREA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Area End In Here -->
+
+    <!-- Product Area Start From Here -->
+    <div class="w-full py-16">
+        <div class="container">
+            <h2 class="text-gray-800 uppercase font-bold text-2xl pb-5">Top new arrivals</h2>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6">
+                <!-- Single Product Card Start -->
+                <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product9.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product1.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product2.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product3.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+            </div>
+
+        </div>
+    </div>
+    <!-- Product Area End In Here -->
+
+    <!-- Ad Area Start From Here -->
+    <div class="w-full pb-16">
+        <div class="container">
+            <img src="./assets/images/offer.jpg" class="w-full" alt="">
+        </div>
+    </div>
+    <!-- Ad Area End In Here -->
+
+
+      <!-- Product Area Start From Here -->
+    <div class="w-full py-16">
+        <div class="container">
+            <h2 class="text-gray-800 uppercase font-bold text-2xl pb-5">Recommended For You</h2>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-4  gap-6">
+                <!-- Single Product Card Start -->
+                <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product9.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product1.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product2.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                 <!-- Single Product Card Start -->
+                 <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product3.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product5.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product6.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product7.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+
+                   <!-- Single Product Card Start -->
+                   <div class="bg-white shadow overflow-hidden rounded-sm">
+                    <!-- image box -->
+                    <div class="relative group">
+                        <img src="./assets/images/products/product8.jpg" class="w-full" alt="">
+                        <div class="invisible h-0 group-hover:h-full group-hover:visible absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 transition-all duration-500 overflow-hidden">
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="" class="bg-primary h-10 w-10 rounded-full text-white flex justify-center items-center"><i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Products Detaisl Box -->
+                    <div class="pt-4 pb-3 px-4">
+                        <h2 class=" uppercase font-bold text-gray-800 font-poppins">Unique Chair</h2>
+                        <div class="flex gap-2 items-baseline">
+                            <span class="text-md font-medium text-primary">$45.00</span>
+                            <span class="text-sm font-medium text-gray-500 line-through">$45.00</span>
+                        </div>
+                        <div class="flex items-baseline gap-1 py-2">
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star text-xs text-orange-400"></i>
+                            <i class="fa fa-star-half text-xs text-orange-400"></i>
+                            <i class="text-xs text-gray-400">(4.9)</i>                      
+                        </div>
+                    </div>
+                    <button class="bg-primary border-primary text-white text-center w-full py-2 hover:bg-transparent hover:text-primary transition-all hover:border-2 hover:border-primary">Shop Now</button>
+                </div>
+                <!-- Single Product Card End -->
+            </div>
+
+        </div>
+    </div>
+    <!-- Product Area End In Here -->
+
+     <!-- Footer Area Start From Here -->
+    <div class="w-full pb-16 bg-slate-300 py-16">
+        <div class="container grid grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <img src="./assets/images/logo.svg" class="w-32 pb-5" alt="">
+                <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta fugiat tempora aliquid officiis blanditiis, voluptas delectus nulla nihil non!</p>
+                <div class="flex space-x-2 text-slate-500 py-3 cursor-pointer">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+            <div class="col-span-2 grid grid-cols-4 gap-3">
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Solutions</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Merketing</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Analystics</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Commerce</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Insights</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Supports</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Pricing</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Documentatio</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Guids</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Support</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Comapny</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">About</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Blogs</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Jobs</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Merketing</a>
+                </div>
+
+                <div>
+                    <h3 class=" font-medium text-slate-600 uppercase font-poppins">Legals</h3>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Clams</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Policy</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Priavcy</a>
+                    <a href="#" class="block py-1 text-gray-600 text-sm">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End In Here -->
+    <!-- Copyrights Area Start In Here -->
+    <div class="w-full py-3 bg-black text-white">
+        <div class="container  flex justify-between">
+            <div class="text">
+                <p>All rights reserve to <span class="font-bold text-primary">&copy; REFSHOP</span></p>
+            </div>
+            <img src="./assets/images/methods.png" class="w-64" alt="">
+        </div>
+    </div>
+    <!-- Copyrights Area End In Here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
